@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag-Drop</title>
+    <style>
+        *{margin: 0;padding: 0;box-sizing: border-box;font-family: sans-serif;}
+        body{height: 100vh;background-image: linear-gradient(#294d61, #6da5c0);display: flex;justify-content: center;align-items: center;flex-direction: column;}
+        .title-box{background: #d2cbcb;width: 30%;text-align: center;padding: 20px 0;border-radius: 10px;}
+        h1{color: #26425a;margin-bottom: 10px};
+        .boxes{display: flex;flex-direction: column;}
+        input{width: 80%;display: inline-block;margin-bottom: 10px;outline: unset;border: unset;padding: 9px 15px;border-radius: 10px;}
+        button{width: 80%;display: inline-block;border: unset;padding: 9px;border-radius: 10px;color: #fff; font-weight: bold;cursor: pointer;background: #294d61;}
+        .branch-tasks{width: 80%;display: flex;justify-content: space-between;margin-top: 30px;align-items: flex-start;}
+        .box{background: #d2cbcb;width: 20%;border-radius: 10px;padding: 9px 15px;}
+        .box h2{ color: #26425a; margin: 10px 0;}
+        p{border-radius: 10px;padding: 9px 15px;color: #fff;margin-bottom: 5px;background: #26425a;cursor:grab;}
+    </style>
+</head>
+<body>
+    <div class="title-box">
+        <h1>Tasks</h1>
+        <div class="boxes">
+            <input type="text" placeholder="Enter Your Task">
+            <button>Add</button>
+        </div>
+    </div>
+    <div class="branch-tasks">
+        <div class="box">
+            <h2>employee 1</h2>
+            <div class="task">
+            </div>
+        </div>
+        <div class="box">
+            <h2>employee 2</h2>
+        </div>
+        <div class="box">
+            <h2>employee 3</h2>
+        </div>
+        <div class="box">
+            <h2>employee 4</h2>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
